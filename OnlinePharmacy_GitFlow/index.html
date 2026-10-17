@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareCart | Online Pharmacy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">＋</span> CareCart</a>
+    <nav><a href="#medicines">Medicines</a><a href="#how">How it works</a></nav>
+    <button class="cart-button" id="cartButton">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR HEALTH, OUR PRIORITY</p>
+        <h1>Wellness essentials,<br><span>made simple.</span></h1>
+        <p class="hero-text">Explore everyday wellness products in a clean, easy-to-use pharmacy demo.</p>
+        <a class="primary-button" href="#medicines">Browse products <span>→</span></a>
+        <p class="small-note">Demo only · No real orders or payments</p>
+      </div>
+      <div class="hero-art" aria-label="Illustration of pharmacy essentials">
+        <div class="sun"></div><div class="cross">＋</div>
+        <div class="bottle"><div class="bottle-cap"></div><div class="bottle-label">CARE<br><b>DAILY</b></div></div>
+        <div class="pill pill-one"></div><div class="pill pill-two"></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+      </div>
+    </section>
+
+    <section class="trust-row" id="how">
+      <div><span>✓</span><b>Easy browsing</b><small>Find items quickly</small></div>
+      <div><span>♡</span><b>Wellness first</b><small>Simple product details</small></div>
+      <div><span>⌂</span><b>Order flow demo</b><small>Practice UI interactions</small></div>
+    </section>
+
+    <section class="catalog" id="medicines">
+      <div class="section-heading"><div><p class="eyebrow">THE EVERYDAY EDIT</p><h2>Popular essentials</h2></div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"></label>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All products</button>
+        <button class="filter" data-category="Wellness">Wellness</button>
+        <button class="filter" data-category="Personal Care">Personal care</button>
+        <button class="filter" data-category="First Aid">First aid</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products match your search.</p>
+    </section>
+
+    <section class="notice">
+      <div class="notice-icon">i</div><div><b>Health and safety notice</b><p>This educational demo is not medical advice. Use medicines only as directed by a qualified healthcare professional. Prescription-only medicines require valid prescriptions and pharmacist review.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-icon">＋</span> CareCart</a><span>Git Flow learning project · Front-end demo</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
